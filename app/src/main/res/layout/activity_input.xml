@@ -16,11 +16,12 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <Button
         android:id="@+id/hoursWorkedField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Hours Worked"
+        android:onClick="onDobClick"
         app:layout_constraintBottom_toTopOf="@id/MoneyMadeField"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
