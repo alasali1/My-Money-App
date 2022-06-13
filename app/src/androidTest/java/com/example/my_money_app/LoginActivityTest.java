@@ -16,7 +16,7 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule;
 
 import org.junit.Rule;
 import org.junit.Test;
-
+//ToDo: We need more tests for code coverage. Only at 16% right now.
 public class LoginActivityTest {
 
     @Rule
