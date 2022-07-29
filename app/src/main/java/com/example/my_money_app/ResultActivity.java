@@ -95,11 +95,13 @@ final String TAG ="Day is: ";
              double sumStudy = 0;
              double sumExpense = 0;
 
-             for(int i = 0; i < valueList.size(); i++){
-
-                     sumWork += valueList.get(i).getWorkHours();
-                     sumStudy += valueList.get(i).getStudyHours();
-                     sumExpense += valueList.get(i).getExpenses();
+             for(int i = 0; i < valueList.size(); i++) {
+                 if (valueList.get(i).getDate() != null)
+                     if (valueList.get(i).getDate().equals(this.date)) {
+                         sumWork += valueList.get(i).getWorkHours();
+                         sumStudy += valueList.get(i).getStudyHours();
+                         sumExpense += valueList.get(i).getExpenses();
+                     }
              }
              hoursWorked.setText("Hours Worked: " + String.valueOf(sumWork));
              hoursStudied.setText("Hours Studied: " +String.valueOf(sumStudy));
